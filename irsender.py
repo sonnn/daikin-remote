@@ -3,19 +3,6 @@ import pigpio
 import time
 import argparse
 
-OUTPUT_PIN = 17;
-DUTY_CYCLE = 0.5;
-FREQUENCY = 38000;
-
-START_PLUSE_DURATION = 3500;
-START_GAP_DURATION = 1600;
-
-PLUSE_ONE = 480;
-GAP_ONE = 1200;
-
-PLUSE_ZERO = 480;
-GAP_ZERO = 350;
-
 class TX:
   def __init__(self, pi, out_put_pin, duty_cycle, frequency):
     self.pi = pi
